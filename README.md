@@ -7,6 +7,47 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+---
+
+## 🚀 Setup
+
+### 1. 必要要件
+
+- Node.js 18以上推奨
+- npm または yarn, pnpm
+
+### 2. インストール
+
+```bash
+npm install
+# または
+yarn install
+# または
+pnpm install
+```
+
+### 3. 開発サーバー起動
+
+```bash
+npm run dev
+```
+
+ブラウザで [http://localhost:5173](http://localhost:5173) を開いてください。
+
+### 4. ビルド
+
+```bash
+npm run build
+```
+
+### 5. プレビュー
+
+```bash
+npm run preview
+```
+
+---
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
