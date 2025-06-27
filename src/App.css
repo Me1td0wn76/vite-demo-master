@@ -1,0 +1,140 @@
+body, #root {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80') center/cover no-repeat;
+  /* Unsplashの空の写真例。お好みの画像URLに変更可 */
+  background-attachment: fixed;
+}
+.bg-gray-100 {
+  background: rgba(255,255,255,0.85) !important;
+  /* カード背景を半透明白にして写真の上でも見やすく */
+  backdrop-filter: blur(2px);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.weather-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.2rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  text-align: left;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+.weather-card:hover {
+  box-shadow: 0 4px 16px #0002;
+}
+.weather-date {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.3em;
+}
+.weather-main {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+.weather-main span {
+  color: #111; /* 天気説明テキストを黒に */
+}
+.weather-icon {
+  font-size: 2rem;
+  margin-right: 0.5em;
+}
+.weather-detail {
+  font-size: 0.95rem;
+  margin-bottom: 0.2em;
+}
+.weather-detail-text {
+  margin-left: 0.2em;
+  font-weight: normal;
+  color: #222;
+}
+.weather-detail.wind .weather-detail-icon {
+  color: #38bdf8; /* 水色 */
+  margin-right: 0.3em;
+}
+.weather-detail.wave .weather-detail-icon {
+  color: #2563eb; /* 青 */
+  margin-right: 0.3em;
+}
+.weather-icon.sunny {
+  color: #fbbf24; /* 晴れ: オレンジ */
+}
+.weather-icon.cloudy {
+  color: #a3a3a3; /* 曇り: グレー */
+}
+.weather-icon.rainy {
+  color: #38bdf8; /* 雨: 水色 */
+}
+.weather-icon.snowy {
+  color: #60a5fa; /* 雪: 青みがかった水色 */
+}
+.weather-icon.thunder {
+  color: #facc15; /* 雷: 黄色 */
+}
+.weather-icon.storm {
+  color: #6366f1; /* 暴風: 紫 */
+}
+h1, .weather-title {
+  color: #111 !important;
+}
+.label-title {
+  color: #111;
+  font-weight: bold;
+  margin-right: 0.5em;
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+}
